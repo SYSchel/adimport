@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `adimport_tmp` (
+  `id_adimport` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `article` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `available` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `currencyId` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `delivery` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text COLLATE utf8_unicode_ci,
+  `id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name` text COLLATE utf8_unicode_ci,
+  `oldprice` varchar(255) COLLATE utf8_unicode_ci DEFAULT '0',
+  `param` text COLLATE utf8_unicode_ci,
+  `picture` text COLLATE utf8_unicode_ci,
+  `price` varchar(255) COLLATE utf8_unicode_ci DEFAULT '0',
+  `url` text COLLATE utf8_unicode_ci,
+  `vendor` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `advcampaign_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `advcampaign_name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id_adimport`),
+  KEY `id_item` (`id`),
+  KEY `price` (`price`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
