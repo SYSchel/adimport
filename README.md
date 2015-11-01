@@ -1,5 +1,4 @@
 #Adimport.ru to Django
-========
 This is an example of the work with the unloading of the merchandise affiliate system admitad.com through the app adimport.ru.
 
 
