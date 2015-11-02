@@ -31,6 +31,7 @@ Service for structured and uniform unloading of the products from the affiliate 
 Adimport - пример загрузки из adimport.ru в Django проект.
 
 В файле `adimport/adimport.py` показан пример быстрой загрузки большого файла CSV с товарами из партнёрской сети [admitad.com](https://www.admitad.com/ru/promo/?ref=3b2149a63a). Тесты провотились на файле с 1 000 000 товарных позиций и весе файла около 1 гигабайта.
+
 1. Для начала, нужно создать временную таблицу из файла `create_tmp.sql`, в корне примера. Туда будут предварительно загружаться товары из CSV файла.
 
 2. Далее, необходимо иметь такую же или схожую структуру моделей каталога, как в примере `catalog/models.py`
